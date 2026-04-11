@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ct3ry26bq3a8l"]
+
+[ext_resource type="Script" uid="uid://gh2pjd5a8ptu" path="res://scripts/Models/table_items/clock.gd" id="1_eptq3"]
+[ext_resource type="PackedScene" uid="uid://bdimroqv587qe" path="res://assets/models/env/table_items/table_clock.glb" id="1_y58p0"]
+[ext_resource type="FontFile" uid="uid://csnw4f43fi3sx" path="res://assets/fonts/DS-DIGIB.TTF" id="2_eptq3"]
+
+[node name="Clock" type="Node3D"]
+script = ExtResource("1_eptq3")
+
+[node name="table_clock" parent="." instance=ExtResource("1_y58p0")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
+
+[node name="Label3D" type="Label3D" parent="table_clock"]
+transform = Transform3D(1, 0, 0, 0, 0.95480233, 0.29724157, 0, -0.29724157, 0.95480233, 0, 0.20415197, 0.8250504)
+text = "07:00"
+font = ExtResource("2_eptq3")
+font_size = 282
+outline_size = 0

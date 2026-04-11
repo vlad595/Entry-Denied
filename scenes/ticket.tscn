@@ -1,0 +1,100 @@
+[gd_scene load_steps=5 format=3 uid="uid://kotopaq1ld2x"]
+
+[ext_resource type="Texture2D" uid="uid://dpbmg5kful2o8" path="res://assets/textures/documents/AirplaneTicket.png" id="1_7yqn5"]
+[ext_resource type="Script" uid="uid://d3nvp5534vb4t" path="res://scripts/Models/docs/ticket.gd" id="1_krxyo"]
+
+[sub_resource type="SystemFont" id="SystemFont_7yqn5"]
+font_italic = true
+font_weight = 999
+font_stretch = 50
+subpixel_positioning = 0
+multichannel_signed_distance_field = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7yqn5"]
+size = Vector3(10.226318, 5.137268, 0.075927734)
+
+[node name="AirplaneTicket" type="Area3D"]
+transform = Transform3D(-1, -8.742278e-08, 4.371139e-08, 4.371139e-08, 1.9106855e-15, 1, -8.742278e-08, 1, 1.9106855e-15, 0, 0, 0)
+script = ExtResource("1_krxyo")
+metadata/_custom_type_script = "uid://d3nvp5534vb4t"
+
+[node name="Name" type="Label3D" parent="."]
+transform = Transform3D(-1.9500269, 1.4210855e-14, 8.742277e-08, 0, -2.3832119, 8.742277e-08, 1.7047677e-07, 2.0834702e-07, 0.99999994, 3.5766613, -1.1939408, -0.0050003123)
+layers = 2
+sorting_offset = 1.0
+alpha_scissor_threshold = 1.0
+alpha_hash_scale = 2.0
+texture_filter = 1
+modulate = Color(0, 0, 0, 1)
+text = "Pedro Pedro"
+font = SubResource("SystemFont_7yqn5")
+horizontal_alignment = 0
+
+[node name="From" type="Label3D" parent="."]
+transform = Transform3D(-1.9500269, 1.4210855e-14, 8.742277e-08, 0, -2.3832119, 8.742277e-08, 1.7047677e-07, 2.0834706e-07, 0.99999994, 3.575769, -0.21725921, -0.0050003557)
+layers = 2
+sorting_offset = 1.0
+alpha_scissor_threshold = 1.0
+alpha_hash_scale = 2.0
+texture_filter = 1
+modulate = Color(0, 0, 0, 1)
+text = "Berdychiv"
+font = SubResource("SystemFont_7yqn5")
+horizontal_alignment = 0
+
+[node name="Destination" type="Label3D" parent="."]
+transform = Transform3D(-1.9500269, 2.0834702e-07, 8.742277e-08, -1.7047677e-07, -2.3832119, 8.742277e-08, 1.7047678e-07, 2.0834698e-07, 0.99999994, 3.591653, 0.7463326, -0.005000397)
+layers = 2
+sorting_offset = 1.0
+alpha_scissor_threshold = 1.0
+alpha_hash_scale = 2.0
+texture_filter = 1
+modulate = Color(0, 0, 0, 1)
+text = "Mariupol"
+font = SubResource("SystemFont_7yqn5")
+horizontal_alignment = 0
+
+[node name="date" type="Label3D" parent="."]
+transform = Transform3D(-1.9500269, 2.0834702e-07, 8.742277e-08, -1.7047677e-07, -2.3832119, 8.742277e-08, 1.7047678e-07, 2.0834698e-07, 0.99999994, 3.591653, 1.6956085, -0.005000439)
+layers = 2
+sorting_offset = 1.0
+alpha_scissor_threshold = 1.0
+alpha_hash_scale = 2.0
+texture_filter = 1
+modulate = Color(0, 0, 0, 1)
+text = "12.04.2026"
+font = SubResource("SystemFont_7yqn5")
+horizontal_alignment = 0
+
+[node name="flight" type="Label3D" parent="."]
+transform = Transform3D(-1.9500269, 2.0834702e-07, 8.742277e-08, -1.7047677e-07, -2.3832119, 8.742277e-08, 1.7047678e-07, 2.0834698e-07, 0.99999994, -0.16402681, -1.197755, -0.0050001317)
+layers = 2
+sorting_offset = 1.0
+alpha_scissor_threshold = 1.0
+alpha_hash_scale = 2.0
+texture_filter = 1
+modulate = Color(0, 0, 0, 1)
+text = "BIB000"
+font = SubResource("SystemFont_7yqn5")
+horizontal_alignment = 0
+
+[node name="time" type="Label3D" parent="."]
+transform = Transform3D(-1.9500269, 2.0834702e-07, 8.742277e-08, -1.7047677e-07, -2.3832119, 8.742277e-08, 1.7047678e-07, 2.0834698e-07, 0.99999994, -0.30364642, 1.7063292, -0.005000258)
+layers = 2
+sorting_offset = 1.0
+alpha_scissor_threshold = 1.0
+alpha_hash_scale = 2.0
+texture_filter = 1
+modulate = Color(0, 0, 0, 1)
+text = "18:00"
+font = SubResource("SystemFont_7yqn5")
+horizontal_alignment = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0013427733, -0.001617432, -0.0035400393)
+shape = SubResource("BoxShape3D_7yqn5")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-1, 7.1054274e-15, 8.742278e-08, 0, -1, 8.742278e-08, 8.742278e-08, 8.7422784e-08, 1, 7.7558643e-10, -0.008871675, -1.6950979e-17)
+layers = 2
+texture = ExtResource("1_7yqn5")

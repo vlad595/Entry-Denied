@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://kvoeoqbtic63"]
+
+[ext_resource type="Shader" uid="uid://18hinjqgysgm" path="res://assets/shaders/lameli_vertex_shader.gdshader" id="1_5co1w"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_5co1w")
+shader_parameter/bag_pos = Vector3(0, 0, 0)
+shader_parameter/bag_radius = 0.5
+shader_parameter/push_strength = 1.2

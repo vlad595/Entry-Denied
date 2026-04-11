@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3k8oindg4thm"]
+
+[ext_resource type="PackedScene" uid="uid://b8c6oak148in6" path="res://assets/models/baggage/baggage_1.glb" id="1_2hayf"]
+[ext_resource type="Script" uid="uid://xmuuw73qvugy" path="res://scripts/Models/baggage.gd" id="1_5o6a2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5o6a2"]
+size = Vector3(1, 0.5814209, 1.6229248)
+
+[node name="Baggage" type="Area3D"]
+script = ExtResource("1_5o6a2")
+metadata/_custom_type_script = "uid://xmuuw73qvugy"
+
+[node name="baggage_1" parent="." instance=ExtResource("1_2hayf")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="Skeleton3D" parent="baggage_1/Armature" index="0"]
+bones/1/rotation = Quaternion(2.1855692e-08, 1.9540514e-15, 8.940697e-08, 1)
+bones/5/rotation = Quaternion(0, -0.7071068, 0.7071068, -5.338509e-08)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -0.002746582, 0.0014038086)
+shape = SubResource("BoxShape3D_5o6a2")
+
+[editable path="baggage_1"]
