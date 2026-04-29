@@ -4,6 +4,8 @@ class_name DocumentManager
 var passport: Passport
 var ticket: Ticket
 
+signal documents_despawned
+
 var doc_spawn_markers
 
 func _ready() -> void:
